@@ -37,3 +37,4 @@ Today(?day) : IWasLyingYesterday(Lion, ?day), IWasLyingYesterday(Unicorn, ?day)
 : animal : Unicorn ; day : Sunday
 : animal : Unicorn ; day : Thursday
 
+
