@@ -30,3 +30,4 @@ UsorDistras(?angajat) : LucreazaLa(?angajat, ?munca), MuncaPlictisitoare(?munca)
 
 ? NuPromoveaza(Polo, Marco)
 : False
+
