@@ -1,0 +1,31 @@
+
+
+simptom(febra)
+simptom(nasInfundat)
+simptom(stareProasta)
+simptom(durereBurta)
+
+diagnostic(viroza) : simptom(stareProasta)
+diagnostic(viroza) : simptom(febra)
+
+infectie(respirator) : simptom(nasInfundat)
+infectie(digestiv) : simptom(durereBurta)
+infectie(nervos) : simptom(tulburariOculare)
+
+diagnosticViroza(?Sistem) : infectie(?Sistem), diagnostic(viroza)
+
+
+? diagnostic(viroza)
+: True
+
+? diagnosticViroza(respirator)
+: True
+
+? diagnosticViroza(digestiv)
+: True
+
+? diagnosticViroza(nervos)
+: False
+
+? simptom(tulburariOculare)
+
