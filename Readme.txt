@@ -30,7 +30,11 @@ daca da, returnez unificarea si CF
 - cand o premisa se intoarce cu rezultate, verific daca valorile se potrivesc cu ce a fost gasit pana la momentul actual si elimin ce nu se potriveste din lista de unificari posibile, sau daca unificarile nu contin toate variabilele posibile, verific daca pot adauga noua variabila la vreuna din unificarile existente
 - cand termin cu premisele calculez CF al concluziei si adaug in lista de CF-uri pentru a calcula la final CF total
 
+3. Suport pentru functii
 
+- am implementat functiile in python
+- inainte sa apelez recursiv backward_chaining cu o premisa, verific daca vreunul din argumentele sale este o functie, si daca este, aplic functia din python si obtin rezultatul
+- parametrii functiei sunt inlocuiti cu ce gasesc in dict_var_var si daca nu exista acolo, verific valorile temporare gasite pana la momentul dat
 
 4. Coeficienti de incredere
 
